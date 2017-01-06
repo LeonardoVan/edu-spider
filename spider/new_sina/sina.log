@@ -1,0 +1,44 @@
+2017-01-01 13:05:01 [scrapy] ERROR: Spider error processing <GET http://roll.edu.sina.com.cn/more/index_1.shtml> (referer: http://roll.edu.sina.com.cn/more/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/spidermiddlewares/referer.py", line 22, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/spider_scrap/new_sina/new_sina/spiders/new_sina_spider.py", line 36, in get_name
+    lis = BeautifulSoup(response.text, 'lxml').find(class_='list_009').find_all('li')
+AttributeError: 'NoneType' object has no attribute 'find_all'
+2017-01-03 10:05:04 [scrapy] ERROR: Spider error processing <GET http://blog.sina.com.cn/s/blog_1603de7020102wk18.html> (referer: http://roll.edu.sina.com.cn/more/index_1.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sina/new_sina/spiders/new_sina_spider.py", line 229, in get_content
+    weibo_html = urllib2.urlopen(weibo_request).read()
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 467, in error
+    result = self._call_chain(*args)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 654, in http_error_302
+    return self.parent.open(new, timeout=req.timeout)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 435, in open
+    response = meth(req, response)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 548, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 473, in error
+    return self._call_chain(*args)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 556, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 404: Not Found

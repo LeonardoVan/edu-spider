@@ -1,0 +1,301 @@
+2016-12-31 20:00:53 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161231/n477486061.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2016-12-31 20:30:43 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161231/n477486061.shtml> (referer: http://mt.sohu.com/learning/index_112.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2016-12-31 21:00:52 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161231/n477488240.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2016-12-31 21:30:56 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161231/n477488240.shtml> (referer: http://mt.sohu.com/learning/index_118.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 14:00:50 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477514515.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 14:30:51 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477515354.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 14:30:53 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477515364.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 14:30:58 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477514515.shtml> (referer: http://mt.sohu.com/learning/index_186.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 15:00:47 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477515354.shtml> (referer: http://mt.sohu.com/learning/index_188.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 15:00:53 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477515364.shtml> (referer: http://mt.sohu.com/learning/index_188.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 20:00:50 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477527097.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 20:00:52 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477527842.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 20:00:53 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477527868.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-01 21:00:49 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170101/n477530142.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 08:00:56 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477541264.shtml> (referer: http://mt.sohu.com/learning/index_253.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 09:30:49 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477544020.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 09:30:49 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477544013.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 10:00:49 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477544020.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 10:00:49 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477544013.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 10:30:46 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477544020.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 10:30:46 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477544013.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 11:30:49 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477547343.shtml> (referer: http://mt.sohu.com/learning/index_269.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 12:31:06 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477550502.shtml> (referer: http://mt.sohu.com/learning/index_274.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 20:00:53 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477573924.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 20:00:53 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477573914.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 20:30:43 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477573924.shtml> (referer: http://mt.sohu.com/learning/index_333.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 20:30:43 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477573914.shtml> (referer: http://mt.sohu.com/learning/index_333.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-02 21:00:48 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170102/n477576572.shtml> (referer: http://mt.sohu.com/learning/index_336.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 01:00:50 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 01:30:50 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 02:00:48 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 02:30:47 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 03:00:56 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_361.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 03:30:56 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_361.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 04:00:56 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_361.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 04:30:55 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_361.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 05:00:54 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_361.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 05:30:56 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_361.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 06:00:46 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477585379.shtml> (referer: http://mt.sohu.com/learning/index_362.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 08:00:57 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477591245.shtml> (referer: http://mt.sohu.com/learning/index_370.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 08:00:57 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477591244.shtml> (referer: http://mt.sohu.com/learning/index_370.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 08:30:46 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477591245.shtml> (referer: http://mt.sohu.com/learning/index_371.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range
+2017-01-03 08:30:46 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20170103/n477591244.shtml> (referer: http://mt.sohu.com/learning/index_371.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 98, in get_content
+    source = response.xpath("//div[@class='user-txt']/h4/span[@class='user-name']/a/@href").extract()[0]
+IndexError: list index out of range

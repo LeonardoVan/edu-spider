@@ -1,0 +1,55 @@
+2016-12-28 23:30:52 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161228/n477223233.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 92, in get_content
+    item['author'] = author[0]
+IndexError: list index out of range
+2016-12-29 00:01:00 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161228/n477223233.shtml> (referer: http://mt.sohu.com/learning/index_1533.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 92, in get_content
+    item['author'] = author[0]
+IndexError: list index out of range
+2016-12-29 12:01:01 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161229/n477259891.shtml> (referer: http://mt.sohu.com/learning/index.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 99, in get_content
+    item['source'] = source[0]
+IndexError: list index out of range
+2016-12-29 15:00:47 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161229/n477279305.shtml> (referer: http://mt.sohu.com/learning/index_1617.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 134, in get_content
+    cj_get = urllib2.urlopen(cj_request).read().replace('fn(', '').replace(');', '')
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 154, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 1228, in http_open
+    return self.do_open(httplib.HTTPConnection, req)
+  File "/usr/local/Python27/lib/python2.7/urllib2.py", line 1201, in do_open
+    r = h.getresponse(buffering=True)
+  File "/usr/local/Python27/lib/python2.7/httplib.py", line 1136, in getresponse
+    response.begin()
+  File "/usr/local/Python27/lib/python2.7/httplib.py", line 453, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/Python27/lib/python2.7/httplib.py", line 409, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "/usr/local/Python27/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+2016-12-29 19:30:43 [scrapy] ERROR: Spider error processing <GET http://mt.sohu.com/20161229/n477312863.shtml> (referer: http://mt.sohu.com/learning/index_69.shtml)
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/new_sohu/new_sohu/spiders/sohu_edu_spider.py", line 99, in get_content
+    item['source'] = source[0]
+IndexError: list index out of range

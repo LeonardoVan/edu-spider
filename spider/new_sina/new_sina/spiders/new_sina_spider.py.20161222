@@ -1,0 +1,109 @@
+#! /usr/bin/env python
+# coding: utf-8
+# import re
+import scrapy
+from bs4 import BeautifulSoup
+from scrapy.http import Request
+from new_sina.items import NewSinaItem
+# 设置默认编码
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
+
+
+class Myspider(scrapy.Spider):
+
+    name = 'mysina'
+    allowed_domains = ['sina.com.cn']
+    base_url_head = 'http://roll.edu.sina.com.cn/more/index_'
+    base_url_tail = '.shtml'
+    start_urls = ['http://roll.edu.sina.com.cn/more/index.shtml']
+
+    # def start_requests(self):
+    #     for i in range(1, 2):
+    #         url = self.base_url_head + str(i) + self.base_url_tail
+    #     yield Request(url, self.parse)
+
+    def parse(self, response):
+        # print response.text
+        for i in range(1, 2):
+            url = self.base_url_head + str(i) + self.base_url_tail
+            # print url
+            yield Request(url, callback=self.get_name)
+            """yield Request,请求新的URL，后面跟的是回调函数，需要哪个函数来处理这个返回值，就调用哪个函数，
+               返回值会以参数的形式传递到所调用的函数。
+            """
+
+    def get_name(self, response):
+        # print response.text
+        lis = BeautifulSoup(response.text, 'lxml').find(class_='list_009').find_all('li')
+        # print lis
+        """find_all取出来的标签存放在一个列表；不然不能继续使用find"""
+        for li in lis:
+            # print li
+            news_href = li.find('a')['href']
+            # print news_href
+            news_name = li.find('a').get_text()
+            # print news_name
+            news_time = li.find('span').get_text()
+            news_time = news_time.replace('(', '').replace(')', '')
+            # print news_time
+            yield Request(news_href, callback=self.get_content, meta={'name': news_name,
+                                                                      'url': news_href,
+                                                                      'time': news_time})
+            # meta字典，是Scrapy中传递额外数据的方法。因为我们需要在下一个页面中获取新闻内容
+
+    def get_content(self, response):
+        item = NewSinaItem()
+        # 定义newsid
+        item['news_id'] = response.url.strip().split('/')[-1].split('.')[0]
+
+        # 提取news标题
+        name = response.meta['name']
+        item['news_name'] = str(name)
+        # 提取news链接
+        url = response.meta['url']
+        item['news_url'] = str(url)
+        # 提取news发布时间
+        time = response.meta['time']
+        item['news_time'] = str(time)
+        # 提取news作者
+        if 'blog' in url:
+            authors = response.xpath("//div/span/strong[@id='ownernick']/text()").extract()
+            author = authors[0]
+            item['news_author'] = str(author)
+        else:
+            authors = response.xpath("//meta[@property='article:author']/@content").extract()
+            for author in authors:
+                # print author
+                item['news_author'] = str(author)
+        # 提取关键词
+        if 'blog' in url:
+            # keyword = response.xpath("//meta[@name='keywords']/@content").extract()
+            # keywords = str(keyword).split(',')[2:][0].replace(']', '')
+            keywords = response.xpath("//td[@class='blog_tag']/h3/a/text()").extract()[0]
+        else:
+            keywords = response.xpath("//meta[@name='tags']/@content").extract()[0]
+        item['news_keywords'] = keywords
+        # 提取news来源
+        from_1 = response.xpath("//span[@id='author_name']/a[1]/@href").extract()
+        from_2 = response.xpath("//span[@id='media_name']/a[1]/@href").extract()
+        from_3 = response.xpath("//h1[@id='blogname']/a/@href").extract()
+        for i in from_1 or from_2 or from_3:
+            # print i
+            item['news_from'] = str(i)
+        # print url
+        soup = BeautifulSoup(response.text, 'lxml')
+        [script.extract() for script in soup.find_all('script')]  # 去除script标签
+        [style.extract() for style in soup.find_all('style')]  # 去除style标签
+        # 提取news内容
+        if 'blog' in url:
+            content = soup.find(id='sina_keyword_ad_area2').get_text()
+        else:
+            content = soup.find(id='artibody').get_text()
+        # print content
+        # 去除\a0,\u2022，不去除会引起转码报错
+        content = content.replace(u'\xa0', u'').replace(u'\u2022', u'').replace(u'\n', '')
+        item['news_body'] = str(content)
+
+        return item

@@ -1,0 +1,84 @@
+2017-01-02 12:14:22 [scrapy] ERROR: Error processing {'comment_count': None,
+ 'info_id': '',
+ 'link': 'http://edu.163.com/17/0102/05/www.thepaper.cn/',
+ 'news_description': u'\u7f51\u6613\u201c404\u5931\u6548\u9875\u9762\u5bfb\u4eba\u8ba1\u5212\u201d\u5c06\u6240\u6709\u201d404\u5931\u6548\u9875\u9762\u201c\u8bbe\u8ba1\u4e3a\u201c\u5bfb\u4eba\u542f\u4e8b\u201d\uff0c\u520a\u767b\u5931\u8e2a\u5b69\u5b50\u7684\u7167\u7247\u548c\u4fe1\u606f\uff0c\u771f\u8bda\u5bc4\u671b\u901a\u8fc7\u7f51\u6613\u7f51\u53cb\u7684\u5173\u6ce8\u4e0e\u8f6c\u53d1\uff0c\u4e3a\u5931\u8e2a\u7684\u5b69\u5b50\u94fa\u5c31\u4e00\u6761\u56de\u5bb6\u7684\u8def\u3002',
+ 'source': None,
+ 'title': u'\u4e00\u8d77\u5e2e\u5b69\u5b50'}
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/ntes/ntes/mysqlpipelines/pipelines.py", line 21, in process_item
+    tag = item['tag']
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'tag'
+2017-01-02 14:10:39 [scrapy] ERROR: Error processing {'comment_count': None,
+ 'info_id': '',
+ 'link': 'http://edu.163.com/17/0102/05/www.thepaper.cn/',
+ 'news_description': u'\u7f51\u6613\u201c404\u5931\u6548\u9875\u9762\u5bfb\u4eba\u8ba1\u5212\u201d\u5c06\u6240\u6709\u201d404\u5931\u6548\u9875\u9762\u201c\u8bbe\u8ba1\u4e3a\u201c\u5bfb\u4eba\u542f\u4e8b\u201d\uff0c\u520a\u767b\u5931\u8e2a\u5b69\u5b50\u7684\u7167\u7247\u548c\u4fe1\u606f\uff0c\u771f\u8bda\u5bc4\u671b\u901a\u8fc7\u7f51\u6613\u7f51\u53cb\u7684\u5173\u6ce8\u4e0e\u8f6c\u53d1\uff0c\u4e3a\u5931\u8e2a\u7684\u5b69\u5b50\u94fa\u5c31\u4e00\u6761\u56de\u5bb6\u7684\u8def\u3002',
+ 'source': None,
+ 'title': u'\u4e00\u8d77\u5e2e\u5b69\u5b50'}
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/ntes/ntes/mysqlpipelines/pipelines.py", line 21, in process_item
+    tag = item['tag']
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'tag'
+2017-01-02 16:10:38 [scrapy] ERROR: Error processing {'comment_count': None,
+ 'info_id': '',
+ 'link': 'http://edu.163.com/17/0102/05/www.thepaper.cn/',
+ 'news_description': u'\u7f51\u6613\u201c404\u5931\u6548\u9875\u9762\u5bfb\u4eba\u8ba1\u5212\u201d\u5c06\u6240\u6709\u201d404\u5931\u6548\u9875\u9762\u201c\u8bbe\u8ba1\u4e3a\u201c\u5bfb\u4eba\u542f\u4e8b\u201d\uff0c\u520a\u767b\u5931\u8e2a\u5b69\u5b50\u7684\u7167\u7247\u548c\u4fe1\u606f\uff0c\u771f\u8bda\u5bc4\u671b\u901a\u8fc7\u7f51\u6613\u7f51\u53cb\u7684\u5173\u6ce8\u4e0e\u8f6c\u53d1\uff0c\u4e3a\u5931\u8e2a\u7684\u5b69\u5b50\u94fa\u5c31\u4e00\u6761\u56de\u5bb6\u7684\u8def\u3002',
+ 'source': None,
+ 'title': u'\u4e00\u8d77\u5e2e\u5b69\u5b50'}
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/ntes/ntes/mysqlpipelines/pipelines.py", line 21, in process_item
+    tag = item['tag']
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'tag'
+2017-01-02 18:10:39 [scrapy] ERROR: Error processing {'comment_count': None,
+ 'info_id': '',
+ 'link': 'http://edu.163.com/17/0102/05/www.thepaper.cn/',
+ 'news_description': u'\u7f51\u6613\u201c404\u5931\u6548\u9875\u9762\u5bfb\u4eba\u8ba1\u5212\u201d\u5c06\u6240\u6709\u201d404\u5931\u6548\u9875\u9762\u201c\u8bbe\u8ba1\u4e3a\u201c\u5bfb\u4eba\u542f\u4e8b\u201d\uff0c\u520a\u767b\u5931\u8e2a\u5b69\u5b50\u7684\u7167\u7247\u548c\u4fe1\u606f\uff0c\u771f\u8bda\u5bc4\u671b\u901a\u8fc7\u7f51\u6613\u7f51\u53cb\u7684\u5173\u6ce8\u4e0e\u8f6c\u53d1\uff0c\u4e3a\u5931\u8e2a\u7684\u5b69\u5b50\u94fa\u5c31\u4e00\u6761\u56de\u5bb6\u7684\u8def\u3002',
+ 'source': None,
+ 'title': u'\u4e00\u8d77\u5e2e\u5b69\u5b50'}
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/ntes/ntes/mysqlpipelines/pipelines.py", line 21, in process_item
+    tag = item['tag']
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'tag'
+2017-01-02 20:10:37 [scrapy] ERROR: Error processing {'comment_count': None,
+ 'info_id': '',
+ 'link': 'http://edu.163.com/17/0102/05/www.thepaper.cn/',
+ 'news_description': u'\u7f51\u6613\u201c404\u5931\u6548\u9875\u9762\u5bfb\u4eba\u8ba1\u5212\u201d\u5c06\u6240\u6709\u201d404\u5931\u6548\u9875\u9762\u201c\u8bbe\u8ba1\u4e3a\u201c\u5bfb\u4eba\u542f\u4e8b\u201d\uff0c\u520a\u767b\u5931\u8e2a\u5b69\u5b50\u7684\u7167\u7247\u548c\u4fe1\u606f\uff0c\u771f\u8bda\u5bc4\u671b\u901a\u8fc7\u7f51\u6613\u7f51\u53cb\u7684\u5173\u6ce8\u4e0e\u8f6c\u53d1\uff0c\u4e3a\u5931\u8e2a\u7684\u5b69\u5b50\u94fa\u5c31\u4e00\u6761\u56de\u5bb6\u7684\u8def\u3002',
+ 'source': None,
+ 'title': u'\u4e00\u8d77\u5e2e\u5b69\u5b50'}
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/ntes/ntes/mysqlpipelines/pipelines.py", line 21, in process_item
+    tag = item['tag']
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'tag'
+2017-01-02 22:10:39 [scrapy] ERROR: Error processing {'comment_count': None,
+ 'info_id': '',
+ 'link': 'http://edu.163.com/17/0102/05/www.thepaper.cn/',
+ 'news_description': u'\u7f51\u6613\u201c404\u5931\u6548\u9875\u9762\u5bfb\u4eba\u8ba1\u5212\u201d\u5c06\u6240\u6709\u201d404\u5931\u6548\u9875\u9762\u201c\u8bbe\u8ba1\u4e3a\u201c\u5bfb\u4eba\u542f\u4e8b\u201d\uff0c\u520a\u767b\u5931\u8e2a\u5b69\u5b50\u7684\u7167\u7247\u548c\u4fe1\u606f\uff0c\u771f\u8bda\u5bc4\u671b\u901a\u8fc7\u7f51\u6613\u7f51\u53cb\u7684\u5173\u6ce8\u4e0e\u8f6c\u53d1\uff0c\u4e3a\u5931\u8e2a\u7684\u5b69\u5b50\u94fa\u5c31\u4e00\u6761\u56de\u5bb6\u7684\u8def\u3002',
+ 'source': None,
+ 'title': u'\u4e00\u8d77\u5e2e\u5b69\u5b50'}
+Traceback (most recent call last):
+  File "/usr/local/Python27/lib/python2.7/site-packages/Twisted-16.4.1-py2.7-linux-x86_64.egg/twisted/internet/defer.py", line 587, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/home/spider_scrap/ntes/ntes/mysqlpipelines/pipelines.py", line 21, in process_item
+    tag = item['tag']
+  File "/usr/local/Python27/lib/python2.7/site-packages/scrapy/item.py", line 56, in __getitem__
+    return self._values[key]
+KeyError: 'tag'
