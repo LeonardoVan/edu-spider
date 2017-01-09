@@ -11,3 +11,4 @@ requests 2.9.1,
 Scrapy 1.1.0,
 selenium 3.0.2,
 And you should install a web Explorer name PhantomJS,use with selenium to load the js in the webpage.
+You can run the enterpoin.py or run_xxx.py to start the spider, maybe you need edit the setting.py.
